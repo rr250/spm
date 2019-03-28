@@ -51,10 +51,10 @@ const mapStateToProps=(state)=>{
   }
 }
 
-const mapDispatchTOProps=(dispatch)=>{
+const mapDispatchToProps=(dispatch)=>{
   return{
     createProject:(project)=>dispatch(createProject(project))
   }
 }
 
-export default connect(mapStateToProps,mapDispatchTOProps)(CreateProject)
+export default connect(mapStateToProps,mapDispatchToProps)(CreateProject)
