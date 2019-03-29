@@ -14,8 +14,7 @@ export class NewTest extends Component {
           <div class="card">
             <div class="card-content">
               <span class="card-title">Depression</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <p>Depression is a mood disorder characterized by persistently low mood and a feeling of sadness and loss of interest. It is a persistent problem, not a passing one, lasting on average 6 to 8 months.</p>
             </div>
             <div class="card-action grey lighten-4 grey-text">
               <Link to={'/test/depression'}>
@@ -26,8 +25,7 @@ export class NewTest extends Component {
           <div class="card">
             <div class="card-content">
               <span class="card-title">Anxiety</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <p>When an individual faces potentially harmful or worrying triggers, feelings of anxiety are not only normal but necessary for survival.</p>
             </div>
             <div class="card-action grey lighten-4 grey-text">
               <Link to={'/test/anxiety'}>
