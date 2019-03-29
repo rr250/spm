@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "firebase": "^5.7.2",
+    "materialize-social": "^1.0.3",
     "moment": "^2.23.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-google-button": "^0.5.3",
     "react-redux": "^5.1.1",
     "react-redux-firebase": "^2.2.5",
     "react-router-dom": "^4.3.1",

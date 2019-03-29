@@ -5,18 +5,18 @@ import {Redirect} from 'react-router-dom'
 
 export class CreateProject extends Component {
     state={
-      title:'',
-      content:''
+      score:'4',
+      test: 'ptsd'
     }
   handleChange=(e)=>{
     this.setState({
-      [e.target.id]: e.target.value
-    });
+       score: (parseInt)(this.state.score) + (parseInt)(e.target.value) 
+      });
   }  
   handleSubmit=(e)=>{
     e.preventDefault();
-    this.props.createProject(this.state)
-    this.props.history.push('/')
+    console.log(this.state.score)
+    this.props.history.push('/test')
   }  
   
   render() {
@@ -26,17 +26,21 @@ export class CreateProject extends Component {
     return (
       <div className="container">
         <form onSubmit={this.handleSubmit} className="white">
-            <h5 className="grey-text text-darken-3">Create new project</h5>
-            <div className="input-field">
-              <label htmlFor="title">Title</label>
-              <input type="text" id="title" onChange={this.handleChange}/>  
+            <div>
+              <h6>What is your favorite colour?</h6>
+              <label>
+                <input value="1" type="radio" onChange={this.handleChange}/>
+                <span>Red</span>
+              </label>
+            </div>
+            <div>
+              <label>
+                <input value="1" type="radio" onChange={this.handleChange} />
+                <span>Yellow</span>
+              </label>
             </div>
             <div className="input-field">
-              <label htmlFor="content">Project Content</label>
-              <textarea type="text" id="content" className="materialize-textarea" onChange={this.handleChange}/>  
-            </div>
-            <div className="input-field">
-              <button className="btn yellow lighten-1 z-depth-2 blue-text text-darken-2">Create</button>  
+              <button className="btn yellow lighten-1 z-depth-2 blue-text text-darken-2">Submit</button>  
             </div>
         </form>  
       </div>
