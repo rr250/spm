@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
-import {createProject} from '../../store/actions/projectActions'
 import {Redirect} from 'react-router-dom'
+import {createTest} from '../../store/actions/testActions'
 
-export class CreateProject extends Component {
+export class NewTest extends Component {
     state={
-      score:'4',
-      test: 'ptsd'
+      score:'0',
+      testName: 'ptsd',
+      diagnosis:''
     }
   handleChange=(e)=>{
     this.setState({
@@ -15,8 +16,8 @@ export class CreateProject extends Component {
   }  
   handleSubmit=(e)=>{
     e.preventDefault();
-    console.log(this.state.score)
-    this.props.history.push('/test')
+    this.props.createTest(this.state)
+    this.props.history.push('/')
   }  
   
   render() {
@@ -26,22 +27,22 @@ export class CreateProject extends Component {
     return (
       <div className="container">
         <form onSubmit={this.handleSubmit} className="white">
-            <div>
+            <p>
               <h6>What is your favorite colour?</h6>
               <label>
-                <input value="1" type="radio" onChange={this.handleChange}/>
+                <input value="1" name="1" type="radio" onChange={this.handleChange}/>
                 <span>Red</span>
               </label>
-            </div>
-            <div>
+            </p>
+            <p>
               <label>
-                <input value="1" type="radio" onChange={this.handleChange} />
+                <input value="1" name="1" type="radio" onChange={this.handleChange} />
                 <span>Yellow</span>
               </label>
-            </div>
-            <div className="input-field">
+            </p>
+            <p className="input-field">
               <button className="btn yellow lighten-1 z-depth-2 blue-text text-darken-2">Submit</button>  
-            </div>
+            </p>
         </form>  
       </div>
     )
@@ -52,13 +53,14 @@ const mapStateToProps=(state)=>{
   console.log(state);
   return{
       auth: state.firebase.auth
+
   }
 }
 
-const mapDispatchTOProps=(dispatch)=>{
-  return{
-    createProject:(project)=>dispatch(createProject(project))
+const mapDispatchToProps=(dispatch)=>{
+  return{    
+    createTest:(test)=>dispatch(createTest(test))
   }
 }
 
-export default connect(mapStateToProps,mapDispatchTOProps)(CreateProject)
+export default connect(mapStateToProps,mapDispatchToProps)(NewTest)
