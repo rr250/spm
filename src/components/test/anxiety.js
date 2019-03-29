@@ -234,9 +234,85 @@ export class Anxiety extends Component {
               </label>
             </p>
             
+            <p>
+              <h6>8. Do you ever avoid places or social situations for fear of this panic?</h6>
+              <label>
+                <input value="0" name="8" type="radio" onChange={this.handleChange}/>
+                <span>Several days</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="1" name="8" type="radio" onChange={this.handleChange} />
+                <span>Not at all</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="2" name="8" type="radio" onChange={this.handleChange} />
+                <span>More than half the days</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="3" name="8" type="radio" onChange={this.handleChange} />
+                <span>Nearly everyday</span>
+              </label>
+            </p>
             
 
+            <p>
+              <h6>9. Do you experience strong fear that causes panic, shortness of breath, chest pains, a pounding heart, sweating, shaking, nausea, dizziness, and/or fear of dying?</h6>
+              <label>
+                <input value="0" name="9" type="radio" onChange={this.handleChange}/>
+                <span>Several days</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="1" name="9" type="radio" onChange={this.handleChange} />
+                <span>Not at all</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="2" name="9" type="radio" onChange={this.handleChange} />
+                <span>More than half the days</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="3" name="9" type="radio" onChange={this.handleChange} />
+                <span>Nearly everyday</span>
+              </label>
+            </p>
+            
 
+            <p>
+              <h6>10.Do you experience repetitive and persistent thoughts that are upsetting and unwanted?</h6>
+              <label>
+                <input value="0" name="10" type="radio" onChange={this.handleChange}/>
+                <span>Several days</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="1" name="10" type="radio" onChange={this.handleChange} />
+                <span>Not at all</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="2" name="10" type="radio" onChange={this.handleChange} />
+                <span>More than half the days</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="3" name="10" type="radio" onChange={this.handleChange} />
+                <span>Nearly everyday</span>
+              </label>
+            </p>
             <p className="input-field">
               <button className="btn yellow lighten-1 z-depth-2 blue-text text-darken-2">Submit</button>  
             </p>
