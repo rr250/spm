@@ -6,7 +6,7 @@ import {createTest} from '../../store/actions/testActions'
 export class NewTest extends Component {
     state={
       score:'0',
-      testName: 'depression',
+      testName: 'anxiety',
       diagnosis:''
     }
   handleChange=(e)=>{
@@ -31,7 +31,7 @@ export class NewTest extends Component {
             
 
             <p>
-              <h6>1. Thoughts that you would be better off dead or of hurting yourself?</h6>
+              <h6>1. Feeling nervous, anxious or on edge?</h6>
               <label>
                 <input value="0" name="1" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -59,7 +59,7 @@ export class NewTest extends Component {
             
 
             <p>
-              <h6>2. Little interest or pleasure in doing things?</h6>
+              <h6>2. Not being able to stop or control worrying?</h6>
               <label>
                 <input value="0" name="2" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -93,7 +93,7 @@ export class NewTest extends Component {
 
 
             <p>
-              <h6>3. Trouble falling or staying asleep or sleeping too much?</h6>
+              <h6>3. Worring too much about different things?</h6>
               <label>
                 <input value="0" name="3" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -121,7 +121,7 @@ export class NewTest extends Component {
             <br></br>
 
             <p>
-              <h6>4. Feeling tired or having little energy?</h6>
+              <h6>4. Trouble relaxing?</h6>
               <label>
                 <input value="0" name="4" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -149,7 +149,7 @@ export class NewTest extends Component {
             <br></br>
 
             <p>
-              <h6>5. Poor appetite or overeating?</h6>
+              <h6>5. Being so restless that it is hard to sit still?</h6>
               <label>
                 <input value="0" name="5" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -177,7 +177,7 @@ export class NewTest extends Component {
             <br></br>
 
             <p>
-              <h6>6. Feeling bad about yourself- or that you are failure or have let yourself or your family down?</h6>
+              <h6>6. Becoming easily annoyed or irritable?</h6>
               <label>
                 <input value="0" name="6" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -206,7 +206,7 @@ export class NewTest extends Component {
 
 
             <p>
-              <h6>7. Trouble concentrating on things, such as reading the newspaper or watching television?</h6>
+              <h6>7. Feeling afraid, as if something awful might happen?</h6>
               <label>
                 <input value="0" name="7" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -231,89 +231,9 @@ export class NewTest extends Component {
               </label>
             </p>
             
-            <br></br>
+            
 
 
-            <p>
-              <h6>8. Moving or speaking so slowly that other people could have noticed?</h6>
-              <label>
-                <input value="0" name="8" type="radio" onChange={this.handleChange}/>
-                <span>Several days</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="1" name="8" type="radio" onChange={this.handleChange} />
-                <span>Not at all</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="2" name="8" type="radio" onChange={this.handleChange} />
-                <span>More than half the days</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="3" name="8" type="radio" onChange={this.handleChange} />
-                <span>Nearly everyday</span>
-              </label>
-            </p>
-            <br></br>
-
-
-            <p>
-              <h6>9. Thoughts that you would be better off dead or of hurting yourself?</h6>
-              <label>
-                <input value="0" name="9" type="radio" onChange={this.handleChange}/>
-                <span>Several days</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="1" name="9" type="radio" onChange={this.handleChange} />
-                <span>Not at all</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="2" name="9" type="radio" onChange={this.handleChange} />
-                <span>More than half the days</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="3" name="9" type="radio" onChange={this.handleChange} />
-                <span>Nearly everyday</span>
-              </label>
-            </p>
-            <br></br>
-
-            <p>
-              <h6>10. If you checked off any problems, how difficult have these problems made it for you at work, home or with other people?</h6>
-              <label>
-                <input value="0" name="10" type="radio" onChange={this.handleChange}/>
-                <span>Not difficult at all</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="1" name="10" type="radio" onChange={this.handleChange} />
-                <span>Somewhat difficult</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="2" name="10" type="radio" onChange={this.handleChange} />
-                <span>Very difficult</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="3" name="10" type="radio" onChange={this.handleChange} />
-                <span>Extremely difficult</span>
-              </label>
-            </p>
             <p className="input-field">
               <button className="btn yellow lighten-1 z-depth-2 blue-text text-darken-2">Submit</button>  
             </p>
