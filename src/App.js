@@ -9,6 +9,7 @@ import CreateProject from './components/project/CreateProject'
 import NewTest from './components/test/NewTest'
 import Depression from "./components/test/Depression";
 import Anxiety from "./components/test/Anxiety";
+import Reports from "./components/test/Reports";
 class App extends Component {
   render() {
     return (
@@ -24,6 +25,7 @@ class App extends Component {
             <Route exact path="/test" component={NewTest} />
             <Route exact path="/test/depression" component={Depression} />
             <Route exact path="/test/anxiety" component={Anxiety} />
+            <Route path="/report" component={Reports} />
           </Switch>
         </div>
       </BrowserRouter>
