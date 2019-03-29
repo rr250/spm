@@ -10,10 +10,21 @@ export class Anxiety extends Component {
       diagnosis:''
     }
   handleChange=(e)=>{
+    var d;
+    if(this.state.score<=10){
+      d='Nothing to Worry'
+    }
+    else if(this.state.score<=20){
+      d='Consult a Psychiatrist but probably its nothing'
+    }
+    else{
+      d='Emergency!! You should really consult a Psychiatrist'
+    }
     this.setState({
-       score: (parseInt)(this.state.score) + (parseInt)(e.target.value) 
+        score: (parseInt)(this.state.score) + (parseInt)(e.target.value),
+        diagnosis:d
       });
-  }  
+  } 
   handleSubmit=(e)=>{
     e.preventDefault();
     this.props.createTest(this.state)

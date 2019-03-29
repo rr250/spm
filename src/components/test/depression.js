@@ -10,30 +10,23 @@ export class Depression extends Component {
       diagnosis:'Emergency!! You should really consult a Psychiatrist'
     }
   handleChange=(e)=>{
+    var d;
+    if(this.state.score<=10){
+      d='Nothing to Worry'
+    }
+    else if(this.state.score<=20){
+      d='Consult a Psychiatrist but probably its nothing'
+    }
+    else{
+      d='Emergency!! You should really consult a Psychiatrist'
+    }
     this.setState({
-       score: (parseInt)(this.state.score) + (parseInt)(e.target.value) 
+       score: (parseInt)(this.state.score) + (parseInt)(e.target.value),
+       diagnosis:d
       });
   }  
   handleSubmit=(e)=>{
     e.preventDefault();
-    this.setState({
-      diagnosis: 'Nothing to Worry'
-    });
-    if(this.state.score<=10){
-      this.setState({
-        diagnosis: 'Nothing to Worry' 
-      });
-    }
-    else if(this.state.score<=20){
-      this.setState({
-        diagnosis: 'Consult a Psychiatrist but probably its nothing' 
-      });
-    }
-    else{
-      this.setState({
-        diagnosis: 'Emergency!! You should really consult a Psychiatrist'
-      });
-    }
     this.props.createTest(this.state)
     this.props.history.push('/')
   }  
