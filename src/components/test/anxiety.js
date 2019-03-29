@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import {Redirect} from 'react-router-dom'
 import {createTest} from '../../store/actions/testActions'
 
-export class NewTest extends Component {
+export class Anxiety extends Component {
     state={
       score:'0',
       testName: 'anxiety',
@@ -83,15 +83,7 @@ export class NewTest extends Component {
                 <span>Nearly everyday</span>
               </label>
             </p>
-            <br></br>
-
-
-
-            
-
-            
-
-
+            <br></br>      
             <p>
               <h6>3. Worring too much about different things?</h6>
               <label>
@@ -258,4 +250,4 @@ const mapDispatchToProps=(dispatch)=>{
   }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(NewTest)
+export default connect(mapStateToProps,mapDispatchToProps)(Anxiety)
