@@ -7,6 +7,8 @@ const SignedInLinks = (props) => {
     console.log(props.profile)
     return (
         <ul className="right">
+            <li><NavLink to='/maps'>Locate Us</NavLink></li>
+            <li><NavLink to='/chat'>Chat</NavLink></li>
             <li><NavLink to='/create'>New Post</NavLink></li>
             <li><NavLink to='/test'>New Test</NavLink></li>
             <li><NavLink to='/report'>Check Reports</NavLink></li>

@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "firebase": "^5.7.2",
+    "google-map-react": "^1.1.4",
+    "google-maps-react": "^2.0.2",
     "materialize-social": "^1.0.3",
     "moment": "^2.23.0",
     "react": "^16.7.0",

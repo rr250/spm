@@ -3,16 +3,16 @@ import {connect} from 'react-redux'
 import {Redirect} from 'react-router-dom'
 import {createTest} from '../../store/actions/testActions'
 
-export class Anxiety extends Component {
+export class Depression extends Component {
     state={
       score:'0',
-      testName: 'anxiety',
-      diagnosis:''
+      testName: 'depression',
+      diagnosis:'Emergency!! You should really consult a Psychiatrist'
     }
   handleChange=(e)=>{
     var d;
     if(this.state.score<=10){
-      d='Nothing to worry about that may refresh your mind'
+      d='Nothing to Worry'
     }
     else if(this.state.score<=20){
       d='Consult a Psychiatrist but probably its nothing'
@@ -21,10 +21,10 @@ export class Anxiety extends Component {
       d='Emergency!! You should really consult a Psychiatrist'
     }
     this.setState({
-        score: (parseInt)(this.state.score) + (parseInt)(e.target.value),
-        diagnosis:d
+       score: (parseInt)(this.state.score) + (parseInt)(e.target.value),
+       diagnosis:d
       });
-  } 
+  }  
   handleSubmit=(e)=>{
     e.preventDefault();
     this.props.createTest(this.state)
@@ -42,7 +42,7 @@ export class Anxiety extends Component {
             
 
             <p>
-              <h6>1. Feeling nervous, anxious or on edge?</h6>
+              <h6>1. Thoughts that you would be better off dead or of hurting yourself?</h6>
               <label>
                 <input value="0" name="1" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -70,7 +70,7 @@ export class Anxiety extends Component {
             
 
             <p>
-              <h6>2. Not being able to stop or control worrying?</h6>
+              <h6>2. Little interest or pleasure in doing things?</h6>
               <label>
                 <input value="0" name="2" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -94,9 +94,17 @@ export class Anxiety extends Component {
                 <span>Nearly everyday</span>
               </label>
             </p>
-            <br></br>      
+            <br></br>
+
+
+
+            
+
+            
+
+
             <p>
-              <h6>3. Worring too much about different things?</h6>
+              <h6>3. Trouble falling or staying asleep or sleeping too much?</h6>
               <label>
                 <input value="0" name="3" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -124,7 +132,7 @@ export class Anxiety extends Component {
             <br></br>
 
             <p>
-              <h6>4. Trouble relaxing?</h6>
+              <h6>4. Feeling tired or having little energy?</h6>
               <label>
                 <input value="0" name="4" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -152,7 +160,7 @@ export class Anxiety extends Component {
             <br></br>
 
             <p>
-              <h6>5. Being so restless that it is hard to sit still?</h6>
+              <h6>5. Poor appetite or overeating?</h6>
               <label>
                 <input value="0" name="5" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -180,7 +188,7 @@ export class Anxiety extends Component {
             <br></br>
 
             <p>
-              <h6>6. Becoming easily annoyed or irritable?</h6>
+              <h6>6. Feeling bad about yourself- or that you are failure or have let yourself or your family down?</h6>
               <label>
                 <input value="0" name="6" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -209,7 +217,7 @@ export class Anxiety extends Component {
 
 
             <p>
-              <h6>7. Feeling afraid, as if something awful might happen?</h6>
+              <h6>7. Trouble concentrating on things, such as reading the newspaper or watching television?</h6>
               <label>
                 <input value="0" name="7" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -234,8 +242,11 @@ export class Anxiety extends Component {
               </label>
             </p>
             
+            <br></br>
+
+
             <p>
-              <h6>8. Do you ever avoid places or social situations for fear of this panic?</h6>
+              <h6>8. Moving or speaking so slowly that other people could have noticed?</h6>
               <label>
                 <input value="0" name="8" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -259,10 +270,11 @@ export class Anxiety extends Component {
                 <span>Nearly everyday</span>
               </label>
             </p>
-            
+            <br></br>
+
 
             <p>
-              <h6>9. Do you experience strong fear that causes panic, shortness of breath, chest pains, a pounding heart, sweating, shaking, nausea, dizziness, and/or fear of dying?</h6>
+              <h6>9. Thoughts that you would be better off dead or of hurting yourself?</h6>
               <label>
                 <input value="0" name="9" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -286,31 +298,31 @@ export class Anxiety extends Component {
                 <span>Nearly everyday</span>
               </label>
             </p>
-            
+            <br></br>
 
             <p>
-              <h6>10.Do you experience repetitive and persistent thoughts that are upsetting and unwanted?</h6>
+              <h6>10. If you checked off any problems, how difficult have these problems made it for you at work, home or with other people?</h6>
               <label>
                 <input value="0" name="10" type="radio" onChange={this.handleChange}/>
-                <span>Several days</span>
+                <span>Not difficult at all</span>
               </label>
             </p>
             <p>
               <label>
                 <input value="1" name="10" type="radio" onChange={this.handleChange} />
-                <span>Not at all</span>
+                <span>Somewhat difficult</span>
               </label>
             </p>
             <p>
               <label>
                 <input value="2" name="10" type="radio" onChange={this.handleChange} />
-                <span>More than half the days</span>
+                <span>Very difficult</span>
               </label>
             </p>
             <p>
               <label>
                 <input value="3" name="10" type="radio" onChange={this.handleChange} />
-                <span>Nearly everyday</span>
+                <span>Extremely difficult</span>
               </label>
             </p>
             <p className="input-field">
@@ -337,4 +349,4 @@ const mapDispatchToProps=(dispatch)=>{
   }
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(Anxiety)
+export default connect(mapStateToProps,mapDispatchToProps)(Depression)

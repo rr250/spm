@@ -10,6 +10,7 @@ import NewTest from './components/test/NewTest'
 import Depression from "./components/test/Depression";
 import Anxiety from "./components/test/Anxiety";
 import Reports from "./components/test/Reports";
+import Maps from "./components/maps/Maps";
 class App extends Component {
   render() {
     return (
@@ -26,6 +27,7 @@ class App extends Component {
             <Route exact path="/test/depression" component={Depression} />
             <Route exact path="/test/anxiety" component={Anxiety} />
             <Route path="/report" component={Reports} />
+            <Route path="/maps" component={Maps} />
           </Switch>
         </div>
       </BrowserRouter>
