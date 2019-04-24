@@ -3,6 +3,7 @@ import {connect} from 'react-redux'
 import {firestoreConnect} from 'react-redux-firebase'
 import {compose} from 'redux'
 import {Redirect} from 'react-router-dom'
+import moment from 'moment'
 
 class Reports extends Component{
     render(){
@@ -21,11 +22,28 @@ class Reports extends Component{
                                 <div class="card-content">
                                 <span class="card-title">{test.testName}</span>
                                 <p>{test.diagnosis}</p>
+                                <div className="grey-text note-date">
+                                    {moment(test.createdAt.toDate()).format('MMMM Do YYYY, h:mm a')}
+                                </div>
                                 </div>
                             </div>
                         )
                         })}         
                     </div>
+                    </div>
+                    <div className="col s12 m3 offset-m1">
+                        <div className="section">
+                            <div className="card z-depth-0">
+                                <div className="card-content">
+                                    <span className="card-title">Other Remedies</span>                                    
+                                    <ul className="links">
+                                        <li><a href="https://github.com/rr250">Yoga and Meditation</a></li>
+                                        <li><a href="https://github.com/rr250">Yoga and Meditation</a></li>
+                                        <li><a href="https://github.com/rr250">Yoga and Meditation</a></li>
+                                    </ul>    
+                                </div>
+                            </div>
+                        </div>                    
                     </div>
                 </div>
             </div>  
