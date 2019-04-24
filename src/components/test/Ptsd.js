@@ -42,28 +42,28 @@ export class Anxiety extends Component {
             
 
             <p>
-              <h6>1. Feeling nervous, anxious or on edge?</h6>
+              <h6>1. Repeated, disturbing memories, thoughts, or images of a stressful experience from the past?</h6>
               <label>
                 <input value="0" name="1" type="radio" onChange={this.handleChange}/>
-                <span>Several days</span>
+                <span>Never</span>
               </label>
             </p>
             <p>
               <label>
                 <input value="1" name="1" type="radio" onChange={this.handleChange} />
-                <span>Not at all</span>
+                <span>Rarely</span>
               </label>
             </p>
             <p>
               <label>
                 <input value="2" name="1" type="radio" onChange={this.handleChange} />
-                <span>More than half the days</span>
+                <span>Often</span>
               </label>
             </p>
             <p>
               <label>
                 <input value="3" name="1" type="radio" onChange={this.handleChange} />
-                <span>Nearly everyday</span>
+                <span>Sometimes</span>
               </label>
             </p>
             <br></br>
@@ -96,7 +96,7 @@ export class Anxiety extends Component {
             </p>
             <br></br>      
             <p>
-              <h6>3. Worring too much about different things?</h6>
+              <h6>3. Feeling very upset when something reminded you of a stressful experience from the past?</h6>
               <label>
                 <input value="0" name="3" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -152,7 +152,7 @@ export class Anxiety extends Component {
             <br></br>
 
             <p>
-              <h6>5. Being so restless that it is hard to sit still?</h6>
+              <h6>5. Avoid activities or situations because they remind you of a stressful experience from the past?</h6>
               <label>
                 <input value="0" name="5" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -209,7 +209,7 @@ export class Anxiety extends Component {
 
 
             <p>
-              <h6>7. Feeling afraid, as if something awful might happen?</h6>
+              <h6>7. Feeling distant or cut off from other people?</h6>
               <label>
                 <input value="0" name="7" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -235,7 +235,7 @@ export class Anxiety extends Component {
             </p>
             
             <p>
-              <h6>8. Do you ever avoid places or social situations for fear of this panic?</h6>
+              <h6>8. Feeling irritable or having angry outbursts?</h6>
               <label>
                 <input value="0" name="8" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -289,7 +289,7 @@ export class Anxiety extends Component {
             
 
             <p>
-              <h6>10.Do you experience repetitive and persistent thoughts that are upsetting and unwanted?</h6>
+              <h6>10.Having difficulty concentrating?</h6>
               <label>
                 <input value="0" name="10" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>

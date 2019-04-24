@@ -42,7 +42,7 @@ export class Anxiety extends Component {
             
 
             <p>
-              <h6>1. Feeling nervous, anxious or on edge?</h6>
+              <h6>1. Feel more confident and capable	</h6>
               <label>
                 <input value="0" name="1" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -70,7 +70,7 @@ export class Anxiety extends Component {
             
 
             <p>
-              <h6>2. Not being able to stop or control worrying?</h6>
+              <h6>2. See things in a new and exciting light	</h6>
               <label>
                 <input value="0" name="2" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -96,7 +96,7 @@ export class Anxiety extends Component {
             </p>
             <br></br>      
             <p>
-              <h6>3. Worring too much about different things?</h6>
+              <h6>3. Feel very creative with lots of ideas and plans?</h6>
               <label>
                 <input value="0" name="3" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -124,7 +124,7 @@ export class Anxiety extends Component {
             <br></br>
 
             <p>
-              <h6>4. Trouble relaxing?</h6>
+              <h6>4. Become over-involved in new plans and projects?</h6>
               <label>
                 <input value="0" name="4" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -152,7 +152,7 @@ export class Anxiety extends Component {
             <br></br>
 
             <p>
-              <h6>5. Being so restless that it is hard to sit still?</h6>
+              <h6>5. Become totally confident that everything you do will succeed	?</h6>
               <label>
                 <input value="0" name="5" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -180,7 +180,7 @@ export class Anxiety extends Component {
             <br></br>
 
             <p>
-              <h6>6. Becoming easily annoyed or irritable?</h6>
+              <h6>6. Feel that things are very vivid and crystal clear	?</h6>
               <label>
                 <input value="0" name="6" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -209,7 +209,7 @@ export class Anxiety extends Component {
 
 
             <p>
-              <h6>7. Feeling afraid, as if something awful might happen?</h6>
+              <h6>7. Spend, or wish to spend, significant amounts of money?</h6>
               <label>
                 <input value="0" name="7" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -235,7 +235,7 @@ export class Anxiety extends Component {
             </p>
             
             <p>
-              <h6>8. Do you ever avoid places or social situations for fear of this panic?</h6>
+              <h6>8. Notice lots of coincidences occurring?</h6>
               <label>
                 <input value="0" name="8" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -262,7 +262,7 @@ export class Anxiety extends Component {
             
 
             <p>
-              <h6>9. Do you experience strong fear that causes panic, shortness of breath, chest pains, a pounding heart, sweating, shaking, nausea, dizziness, and/or fear of dying?</h6>
+              <h6>9. Note that your senses are heightened and your emotions intensified	?</h6>
               <label>
                 <input value="0" name="9" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
@@ -289,7 +289,7 @@ export class Anxiety extends Component {
             
 
             <p>
-              <h6>10.Do you experience repetitive and persistent thoughts that are upsetting and unwanted?</h6>
+              <h6>10. Work harder, being much more motivated?</h6>
               <label>
                 <input value="0" name="10" type="radio" onChange={this.handleChange}/>
                 <span>Several days</span>
