@@ -37,9 +37,9 @@ class Reports extends Component{
                                 <div className="card-content">
                                     <span className="card-title">Other Remedies</span>                                    
                                     <ul className="links">
-                                        <li><a href="https://github.com/rr250">Yoga and Meditation</a></li>
-                                        <li><a href="https://github.com/rr250">Yoga and Meditation</a></li>
-                                        <li><a href="https://github.com/rr250">Yoga and Meditation</a></li>
+                                        <li><a href="https://www.siddhayoga.org.in">Yoga at Home</a></li>
+                                        <li><a href="http://www.freemeditation.com/online-meditation/music-therapy-for-meditation/">Online Meditation</a></li>
+                                        <li><a href="https://www.online-therapy.com/blog/doodle/">Doodle therapy</a></li>
                                     </ul>    
                                 </div>
                             </div>
