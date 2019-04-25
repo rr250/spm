@@ -45,25 +45,25 @@ export class Anxiety extends Component {
               <h6>1. Repeated, disturbing memories, thoughts, or images of a stressful experience from the past?</h6>
               <label>
                 <input value="0" name="1" type="radio" onChange={this.handleChange}/>
-                <span>Never</span>
+                <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
                 <input value="1" name="1" type="radio" onChange={this.handleChange} />
-                <span>Rarely</span>
+                <span>Sometimes</span>
               </label>
             </p>
             <p>
               <label>
                 <input value="2" name="1" type="radio" onChange={this.handleChange} />
-                <span>Often</span>
+                <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
                 <input value="3" name="1" type="radio" onChange={this.handleChange} />
-                <span>Sometimes</span>
+                <span>Nearly everyday</span>
               </label>
             </p>
             <br></br>
@@ -72,25 +72,25 @@ export class Anxiety extends Component {
             <p>
               <h6>2. Not being able to stop or control worrying?</h6>
               <label>
-                <input value="0" name="2" type="radio" onChange={this.handleChange}/>
-                <span>Several days</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="1" name="2" type="radio" onChange={this.handleChange} />
+                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="2" type="radio" onChange={this.handleChange} />
+                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <span>Sometimes</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="2" name="1" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="2" type="radio" onChange={this.handleChange} />
+                <input value="3" name="1" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
@@ -98,81 +98,79 @@ export class Anxiety extends Component {
             <p>
               <h6>3. Feeling very upset when something reminded you of a stressful experience from the past?</h6>
               <label>
-                <input value="0" name="3" type="radio" onChange={this.handleChange}/>
-                <span>Several days</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="1" name="3" type="radio" onChange={this.handleChange} />
+                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="3" type="radio" onChange={this.handleChange} />
+                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <span>Sometimes</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="2" name="1" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="3" type="radio" onChange={this.handleChange} />
+                <input value="3" name="1" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
-            
             <br></br>
 
             <p>
               <h6>4. Trouble relaxing?</h6>
               <label>
-                <input value="0" name="4" type="radio" onChange={this.handleChange}/>
-                <span>Several days</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="1" name="4" type="radio" onChange={this.handleChange} />
+                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="4" type="radio" onChange={this.handleChange} />
+                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <span>Sometimes</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="2" name="1" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="4" type="radio" onChange={this.handleChange} />
+                <input value="3" name="1" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
-          
             <br></br>
 
             <p>
               <h6>5. Avoid activities or situations because they remind you of a stressful experience from the past?</h6>
               <label>
-                <input value="0" name="5" type="radio" onChange={this.handleChange}/>
-                <span>Several days</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="1" name="5" type="radio" onChange={this.handleChange} />
+                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="5" type="radio" onChange={this.handleChange} />
+                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <span>Sometimes</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="2" name="1" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="5" type="radio" onChange={this.handleChange} />
+                <input value="3" name="1" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
@@ -182,25 +180,25 @@ export class Anxiety extends Component {
             <p>
               <h6>6. Becoming easily annoyed or irritable?</h6>
               <label>
-                <input value="0" name="6" type="radio" onChange={this.handleChange}/>
-                <span>Several days</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="1" name="6" type="radio" onChange={this.handleChange} />
+                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="6" type="radio" onChange={this.handleChange} />
+                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <span>Sometimes</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="2" name="1" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="6" type="radio" onChange={this.handleChange} />
+                <input value="3" name="1" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
@@ -211,108 +209,111 @@ export class Anxiety extends Component {
             <p>
               <h6>7. Feeling distant or cut off from other people?</h6>
               <label>
-                <input value="0" name="7" type="radio" onChange={this.handleChange}/>
-                <span>Several days</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="1" name="7" type="radio" onChange={this.handleChange} />
+                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="7" type="radio" onChange={this.handleChange} />
+                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <span>Sometimes</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="2" name="1" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="7" type="radio" onChange={this.handleChange} />
+                <input value="3" name="1" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
-            
+            <br></br>
+
             <p>
               <h6>8. Feeling irritable or having angry outbursts?</h6>
               <label>
-                <input value="0" name="8" type="radio" onChange={this.handleChange}/>
-                <span>Several days</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="1" name="8" type="radio" onChange={this.handleChange} />
+                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="8" type="radio" onChange={this.handleChange} />
+                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <span>Sometimes</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="2" name="1" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="8" type="radio" onChange={this.handleChange} />
+                <input value="3" name="1" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
-            
+            <br></br>
 
             <p>
               <h6>9. Do you experience strong fear that causes panic, shortness of breath, chest pains, a pounding heart, sweating, shaking, nausea, dizziness, and/or fear of dying?</h6>
               <label>
-                <input value="0" name="9" type="radio" onChange={this.handleChange}/>
-                <span>Several days</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="1" name="9" type="radio" onChange={this.handleChange} />
+                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="9" type="radio" onChange={this.handleChange} />
+                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <span>Sometimes</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="2" name="1" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="9" type="radio" onChange={this.handleChange} />
+                <input value="3" name="1" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
-            
+            <br></br>
 
             <p>
               <h6>10.Having difficulty concentrating?</h6>
               <label>
-                <input value="0" name="10" type="radio" onChange={this.handleChange}/>
-                <span>Several days</span>
-              </label>
-            </p>
-            <p>
-              <label>
-                <input value="1" name="10" type="radio" onChange={this.handleChange} />
+                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="10" type="radio" onChange={this.handleChange} />
+                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <span>Sometimes</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input value="2" name="1" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="10" type="radio" onChange={this.handleChange} />
+                <input value="3" name="1" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
+            <br></br>
+
             <p className="input-field">
               <button className="btn yellow lighten-1 z-depth-2 blue-text text-darken-2">Submit</button>  
             </p>

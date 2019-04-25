@@ -33,6 +33,28 @@ export class NewTest extends Component {
               </Link>
             </div>
           </div>
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Bipolar Disorder</span>
+              <p>Bipolar disorder, formerly called manic depression, is a mental health condition that causes extreme mood swings that include emotional highs (mania or hypomania) and lows (depression).</p>
+            </div>
+            <div class="card-action grey lighten-4 grey-text">
+              <Link to={'/test/anxiety'}>
+                Bipolar Disorder Test
+              </Link>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Post-traumatic stress disorder:PTSD</span>
+              <p>Post-traumatic stress disorder (PTSD) is brought on by witnessing a terrifying, usually life-threatening, event. Severe anxiety, flashbacks, uncontrollable thoughts and nightmares are common symptoms of the illness.</p>
+            </div>
+            <div class="card-action grey lighten-4 grey-text">
+              <Link to={'/test/anxiety'}>
+                PTSD Test
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     )
