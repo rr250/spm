@@ -72,6 +72,7 @@ export class CreateProject extends Component {
             </div>
             <div className="input-field">
               <button className="btn yellow lighten-1 z-depth-2 blue-text text-darken-2">Create</button>  
+              <br/>
               <button className="btn yellow lighten-1 z-depth-2 blue-text text-darken-2" onClick={this.handleSubmitAnon}>Create as Anonymous</button>
               <div className="red-text center">
                 {this.errors!==[] && (

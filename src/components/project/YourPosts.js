@@ -5,7 +5,7 @@ import {firestoreConnect} from 'react-redux-firebase'
 import {compose} from 'redux'
 import {Redirect} from 'react-router-dom'
 
-class Dashboard extends Component{
+class YourPosts extends Component{
     render(){
         
         const { projects,auth }=this.props;
@@ -15,9 +15,16 @@ class Dashboard extends Component{
             <div className="dashboard container">
                 <div className="row">
                     <div className="col s12 m7">
-                 
-                        <ProjectList projects={projects}/>
-                        
+                    {projects && projects.map(project=>{
+                        if(auth.uid===project.authorId)return(
+                            <div class="card">
+                                <div class="card-content">
+                                    <span class="card-title">{project.title}</span>
+                                    <p>{project.content}</p>
+                                </div>
+                            </div>
+                        )
+                    })}                        
                     </div>
                 </div>
             </div>  
@@ -30,11 +37,10 @@ const mapStateToProps=(state)=>{
     return{
         projects: state.firestore.ordered.projects,
         auth: state.firebase.auth,
-        notifications: state.firestore.ordered.notifications
     }
 }
 
 export default compose(
     connect(mapStateToProps),
-    firestoreConnect(props=>[{collection: 'projects',orderBy:['createdAt','desc'], where: [['authorId', '==', props.auth.uid]], }])
-)(Dashboard)
+    firestoreConnect([{collection: 'projects',orderBy:['createdAt','desc']}])
+)(YourPosts)
