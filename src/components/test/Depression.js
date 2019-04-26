@@ -72,25 +72,25 @@ export class Depression extends Component {
             <p>
               <h6>2. Little interest or pleasure in doing things?</h6>
               <label>
-                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
+                <input value="0" name="2" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <input value="1" name="2" type="radio" onChange={this.handleChange} />
                 <span>Sometimes</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="1" type="radio" onChange={this.handleChange} />
+                <input value="2" name="2" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="1" type="radio" onChange={this.handleChange} />
+                <input value="3" name="2" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
@@ -106,25 +106,25 @@ export class Depression extends Component {
             <p>
               <h6>3. Trouble falling or staying asleep or sleeping too much?</h6>
               <label>
-                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
+                <input value="0" name="3" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <input value="1" name="3" type="radio" onChange={this.handleChange} />
                 <span>Sometimes</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="1" type="radio" onChange={this.handleChange} />
+                <input value="2" name="3" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="1" type="radio" onChange={this.handleChange} />
+                <input value="3" name="3" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
@@ -133,25 +133,25 @@ export class Depression extends Component {
             <p>
               <h6>4. Feeling tired or having little energy?</h6>
               <label>
-                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
+                <input value="0" name="4" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <input value="1" name="4" type="radio" onChange={this.handleChange} />
                 <span>Sometimes</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="1" type="radio" onChange={this.handleChange} />
+                <input value="2" name="4" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="1" type="radio" onChange={this.handleChange} />
+                <input value="3" name="4" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
@@ -160,25 +160,25 @@ export class Depression extends Component {
             <p>
               <h6>5. Poor appetite or overeating?</h6>
               <label>
-                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
+                <input value="0" name="5" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <input value="1" name="5" type="radio" onChange={this.handleChange} />
                 <span>Sometimes</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="1" type="radio" onChange={this.handleChange} />
+                <input value="2" name="5" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="1" type="radio" onChange={this.handleChange} />
+                <input value="3" name="5" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
@@ -188,25 +188,25 @@ export class Depression extends Component {
             <p>
               <h6>6. Feeling bad about yourself- or that you are failure or have let yourself or your family down?</h6>
               <label>
-                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
+                <input value="0" name="6" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <input value="1" name="6" type="radio" onChange={this.handleChange} />
                 <span>Sometimes</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="1" type="radio" onChange={this.handleChange} />
+                <input value="2" name="6" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="1" type="radio" onChange={this.handleChange} />
+                <input value="3" name="6" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
@@ -217,25 +217,25 @@ export class Depression extends Component {
             <p>
               <h6>7. Trouble concentrating on things, such as reading the newspaper or watching television?</h6>
               <label>
-                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
+                <input value="0" name="7" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <input value="1" name="7" type="radio" onChange={this.handleChange} />
                 <span>Sometimes</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="1" type="radio" onChange={this.handleChange} />
+                <input value="2" name="7" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="1" type="radio" onChange={this.handleChange} />
+                <input value="3" name="7" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
@@ -245,25 +245,25 @@ export class Depression extends Component {
             <p>
               <h6>8. Moving or speaking so slowly that other people could have noticed?</h6>
               <label>
-                <input value="0" name="1" type="radio" onChange={this.handleChange}/>
+                <input value="0" name="8" type="radio" onChange={this.handleChange}/>
                 <span>Not at all</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="1" name="1" type="radio" onChange={this.handleChange} />
+                <input value="1" name="8" type="radio" onChange={this.handleChange} />
                 <span>Sometimes</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="2" name="1" type="radio" onChange={this.handleChange} />
+                <input value="2" name="8" type="radio" onChange={this.handleChange} />
                 <span>More than half the days</span>
               </label>
             </p>
             <p>
               <label>
-                <input value="3" name="1" type="radio" onChange={this.handleChange} />
+                <input value="3" name="8" type="radio" onChange={this.handleChange} />
                 <span>Nearly everyday</span>
               </label>
             </p>
