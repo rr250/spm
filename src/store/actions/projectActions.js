@@ -17,3 +17,23 @@ export const createProject=(project)=>{
         
     }
 };
+
+export const anonCreateProject=(project)=>{
+    return(dispath, getState, {getFirebase, getFirestore})=>{
+        const firestore = getFirestore();
+        const profile = getState().firebase.profile;
+        const authorId = getState().firebase.auth.uid;
+        firestore.collection('projects').add({
+            ...project,
+            authorFirstName: 'Anonymous',
+            authorLastName:'User',
+            authorId:authorId,
+            createdAt:new Date()
+        }).then(()=>{
+            dispath({type: 'CREATE_PROJECT', project});
+        }).catch((err)=>{
+            dispath({type: 'CREATE_PROJECT_ERROR', err});
+        })
+        
+    }
+};
