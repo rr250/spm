@@ -6,6 +6,7 @@ import ProjectDetails from "./components/project/ProjectDetails";
 import SignIn from "./components/auth/SignIn";
 import SignUp from './components/auth/SignUp';
 import CreateProject from './components/project/CreateProject'
+import YourPosts from './components/project/YourPosts'
 import NewTest from './components/test/NewTest'
 import Depression from "./components/test/Depression";
 import Anxiety from "./components/test/Anxiety";
@@ -28,6 +29,7 @@ class App extends Component {
             <Route exact path="/test/anxiety" component={Anxiety} />
             <Route path="/report" component={Reports} />
             <Route path="/maps" component={Maps} />
+            <Route path="/yourposts" component={YourPosts} />
           </Switch>
         </div>
       </BrowserRouter>
