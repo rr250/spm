@@ -6,13 +6,13 @@ import {createTest} from '../../store/actions/testActions'
 export class Anxiety extends Component {
     state={
       score:'0',
-      testName: 'anxiety',
+      testName: 'Bipolar',
       diagnosis:''
     }
   handleChange=(e)=>{
     var d;
     if(this.state.score<=10){
-      d='Nothing to worry about that may refresh your mind'
+      d='Nothing to worry about. You may try some Home Remedies'
     }
     else if(this.state.score<=20){
       d='Consult a Psychiatrist but probably its nothing'
